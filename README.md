@@ -1,4 +1,4 @@
-# cpp-mini-projects# Collection of mini C++ projects
+#Collection of mini C++ projects
 **Doublets:**
 
 Determines minimum chain of intermediate words required to bridge between an initial word and a target word of the same number of letters by changing one letter at a time. Each step must also be a valid word, and these are explored recursively with comaprison to a custom dictionary search.

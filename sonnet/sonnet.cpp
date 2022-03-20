@@ -10,18 +10,6 @@ using namespace std;
 
 #include "sonnet.h"
 
-/* PRE-SUPPLIED HELPER FUNCTIONS START HERE */
-
-/* NOTE: It is much more important to understand the interface to and
-   the "black-box" operation of these functions (in terms of inputs and
-   outputs) than it is to understand the details of their inner working. */
-
-/* get_word(...) retrieves a word from the input string input_line
-   based on its word number. If the word number is valid, the function
-   places an uppercase version of the word in the output parameter
-   output_word, and the function returns true. Otherwise the function
-   returns false. */
-
 bool get_word(const char *input_line, int word_number, char *output_word) {
   char *output_start = output_word;
   int words = 0;
@@ -90,8 +78,6 @@ char rhyming_letter(const char *ending) {
   return lookup[end];
 }
 
-/* START WRITING YOUR FUNCTION BODIES HERE */
-
 int count_words(const char* line) {
   int count = 0;
   bool word_switch = true;
@@ -106,7 +92,6 @@ int count_words(const char* line) {
     if (line[i] == ' ') {
       word_switch = true;
     }
-
   }
 
   return count;
@@ -198,11 +183,8 @@ bool find_rhyme_scheme(const char* filename, char* scheme) {
     in_stream.getline(line, 512);
   }
 
-
   scheme[line_count] = '\0';
   return true;
-
-
 };
 
 

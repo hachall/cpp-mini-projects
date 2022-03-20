@@ -6,9 +6,7 @@ using namespace std;
 
 int main() {
 
-  // question 1
-
-  cout << "====================== Question 1 ======================" << endl;
+  cout << "====================== Section 1 ======================" << endl;
 
   char prepared[100];
   prepare("Come to the Queen's Tower at 7 o'clock!",prepared);
@@ -17,9 +15,7 @@ int main() {
   cout << "encoding as:" << endl;
   cout << "'" << prepared << "'." << endl << endl;
 
-  // question 2
-
-  cout << "====================== Question 2 ======================" << endl;
+  cout << "====================== Section 2 ======================" << endl;
 
   char playfair[6][6];
   grid("IMPERIAL",playfair);
@@ -32,9 +28,7 @@ int main() {
   }
   cout << endl;
 
-  // question 3
-
-  cout << "====================== Question 3 ======================" << endl;
+  cout << "====================== Section 3 ======================" << endl;
 
   char out1, out2;
   bigram(playfair,'C','O',out1,out2);
@@ -45,8 +39,7 @@ int main() {
 
   cout << "The bigram 'N9' encodes as '" << out1 << out2 << "'" << endl << endl;
 
-  // question 4
-  cout << "====================== Question 4 ======================" << endl;
+  cout << "====================== Section 4 ======================" << endl;
 
   char encoded[100];
   encode(playfair, prepared, encoded);
@@ -54,17 +47,6 @@ int main() {
   cout << "The string '" << prepared << "' encodes as:" << endl;
   cout << "'" << encoded << "'" << endl << endl;
 
-  // bonus question (uncomment to attempt)
-
-  /*
-  cout << "==================== Bonus Question ====================" << endl;
-
-  char decoded[100];
-  decode(playfair,"VEKVPDQIQDEDEMMVEHSJPVHENOGMIRHVVMEG",decoded);
-
-  cout << "The string 'VEKVPDQIQDEDEMMVEHSJPVHENOGMIRHVVMEG' decodes as:" << endl;
-  cout << "'" << decoded << "'" << endl;
-  */
 
   return 0;
 }

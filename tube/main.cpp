@@ -8,9 +8,7 @@ using namespace std;
 
 int main() {
 
-  /* This section illustrates the use of the pre-supplied non-helper functions. */
-  /* Be aware that there are also two pre-supplied helper functions */
-  cout << "============== Pre-supplied functions ==================" << endl << endl;
+  cout << "============== Map Loader ==================" << endl << endl;
 
   char **map;
   int height, width;
@@ -26,7 +24,7 @@ int main() {
   print_map(map,height,width);
   cout << endl;
 
-  cout << "====================== Question 1 ======================" << endl << endl;
+  cout << "====================== Section 1 ======================" << endl << endl;
 
   int r, c;
   bool success = get_symbol_position(map, height, width, 'T', r, c);
@@ -53,7 +51,7 @@ int main() {
     cout << "not found.";
   cout << endl << endl;
 
-  cout << "====================== Question 2 ======================" << endl << endl;
+  cout << "====================== Section 2 ======================" << endl << endl;
 
   cout << "The symbol for Victoria station is '" << get_symbol_for_station_or_line("Victoria") << "'" << endl << endl;
 
@@ -64,7 +62,7 @@ int main() {
   /* Birmingham station is not on the Tube map, so this should return ' ' */
   cout << "The symbol for Birmingham station is '" << get_symbol_for_station_or_line("Birmingham") << "'" << endl << endl;
 
-  cout << "====================== Question 3 ======================" << endl << endl;
+  cout << "====================== Section 3 ======================" << endl << endl;
 
   char route[512], destination[512] = "nowhere";
 

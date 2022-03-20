@@ -6,8 +6,7 @@ using namespace std;
 
 int main() {
 
-  // this section illustrates the use of the pre-supplied functions
-  cout << "============== Pre-supplied functions ==================" << endl << endl;
+  cout << "============== Helpers ==================" << endl << endl;
 
   char word[512];
   bool success = get_word("One, two, three!", 2, word);
@@ -20,7 +19,6 @@ int main() {
     cout << "Word number 4 in \"One, two, three!\" is " << word << endl;
   else
     cout << "Word number 4 in \"One, two, three!\" does not exist." << endl;
-
   cout << endl;
 
   rhyming_letter(RESET);
@@ -29,11 +27,9 @@ int main() {
   char three = rhyming_letter("AY");
   char four = rhyming_letter("ATE");
   cout << "Rhyming letters for AY, ATE, AY and ATE are " << one << ", " << two << ", " << three << ", " << four << endl;
-
   cout << endl;
 
-  // Question 1
-  cout << "====================== Question 1 ======================" << endl << endl;
+  cout << "====================== Section 1 ======================" << endl << endl;
 
   cout << "The line \"It's  not so easy!\" contains ";
   cout << count_words("It's  not so easy!") << " words" << endl;
@@ -41,11 +37,9 @@ int main() {
   cout << count_words("") << " words" << endl;
   cout << "The line \"Shall I compare thee to a Summer's day?\" contains ";
   cout << count_words("Shall I compare thee to a Summer's day?") << " words" << endl;
-
   cout << endl;
 
-  // Question 2
-  cout << "====================== Question 2 ======================" << endl << endl;
+  cout << "====================== Section 2 ======================" << endl << endl;
 
   char phonetics[512];
   find_phonetic_ending("DAY", phonetics);
@@ -65,11 +59,9 @@ int main() {
 
   find_phonetic_ending("PAUSE", phonetics);
   cout << "PAUSE has phonetic ending " << phonetics << endl;
-  //
-  // cout << endl;
+  cout << endl;
 
-  // Question 3
-  cout << "====================== Question 3 ======================" << endl << endl;
+  cout << "====================== Section 3 ======================" << endl << endl;
 
   char scheme[512];
   find_rhyme_scheme("shakespeare.txt", scheme);
@@ -80,11 +72,9 @@ int main() {
 
   find_rhyme_scheme("spenser.txt", scheme);
   cout << "The rhyme scheme of spenser.txt is " << scheme << endl;
-
   cout << endl;
 
-  // Question 4
-  cout << "====================== Question 4 ======================" << endl << endl;
+  cout << "====================== Section 4 ======================" << endl << endl;
 
   cout << "The sonnet spenser.txt is a(n) " <<
     identify_sonnet("spenser.txt") << " sonnet" << endl;

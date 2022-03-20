@@ -1,7 +1,6 @@
 /* This header contains a Dictionary class which reads words from a file
    and provides a way for them to be searched. It is used by the helper
-   function dictionary_search(...). It should be not necessary for you to study
-   this header in any detail during the programming examination itself. */
+   function dictionary_search(...). */
 
 #ifndef _DICTIONARY_H
 #define _DICTIONARY_H
@@ -20,7 +19,7 @@ private:
   std::bitset<FILTER_SIZE> *bits;
 
   /* Bob Jenkins' One-at-a-Time Hash Function: Good for hashing strings */
-  static unsigned hash(const char *p) 
+  static unsigned hash(const char *p)
   {
     unsigned h = 0;
     int i;
@@ -60,7 +59,7 @@ public:
   ~Dictionary() {
     delete bits;
   }
-  
+
   inline void insert(const char *word) {
     bits->set(hash(word));
   }

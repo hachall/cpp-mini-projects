@@ -25,7 +25,6 @@ void prepare(const char input[], char output[]) {
 
     }
     //punctuation or space ignored
-
   }
 
   if (j % 2 == 1) {
@@ -78,8 +77,6 @@ void grid(const char codeword[], char grid[][6]) {
       grid_pos++;
     }
   }
-
-
 };
 
 
@@ -98,7 +95,6 @@ void bigram(const char grid[][6], const char inchar1, const char inchar2, char& 
     }
   }
 
-
   outchar1 = grid[char1_row][char2_col];
   outchar2 = grid[char2_row][char1_col];
 
@@ -107,8 +103,6 @@ void bigram(const char grid[][6], const char inchar1, const char inchar2, char& 
 void encode(const char grid[][6], const char prepared[], char encoded[]) {
 
   encode_rec(grid, prepared, encoded, 0);
-
-
 };
 
 void encode_rec(const char grid[][6], const char prepared[], char encoded[], unsigned int pos) {
@@ -119,6 +113,5 @@ void encode_rec(const char grid[][6], const char prepared[], char encoded[], uns
   encoded[pos] = char1;
   encoded[pos + 1] = char2;
   encode_rec(grid, prepared, encoded, pos + 2);
-
 
 }
